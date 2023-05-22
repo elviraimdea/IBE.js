@@ -4,7 +4,7 @@ This framework is responsible for instrumenting Google Chrome extensions. Instru
 
 The script needs to be given a .zip extension as an argument when executed. The extension is decompressed into a temporary directory, instrumented and re-compressed. The resulting file is the instrumented extension.
 
-Requirements
+Requirements.
 The script requires Python 3 and the following libraries:
 * shutil
 * zipfile
@@ -21,22 +21,22 @@ The script requires Python 3 and the following libraries:
 * colorama
 * shared_functions
 
-Use
+Use.
 To run the script, use the following command:
 
 python main.py my_extension.zip
 
 Where my_extension.zip is the file of the extension you want to instrument. Make sure you have the necessary permissions to write to the current directory and that the folder "my_extension.zip" must be inside the folder "extension_file" so that it can be detected by the program. 
 
-Limitations
+Limitations.
 The script is not able to distinguish between different versions of the same extension. If it is run multiple times with the same extension, previous results will be overwritten.
 
 The script is also not able to instrument extensions that depend on other libraries, such as jQuery or Angular. These libraries are automatically skipped during the instrumentation process.
 
-Additional information
+Additional information.
 The script is based on the use of Node.js and its prior installation is required.
 
-Example of implementation
+Example of implementation.
 In the "extension_file" folder there are four examples of folders with extensions in ZIP format:
 * fdepmfkeabkenofnoepdijlaaoklenpm.zip
 * acjecbgflnhmeldadcbblhfdimhifpki.zip
